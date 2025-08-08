@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>UUID Generator</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center p-6">
+
+<h1 class="text-3xl font-bold text-purple-400 mb-6">UUID Generator</h1>
+
+<div class="flex flex-wrap items-center gap-3 mb-6">
+    <label for="count" class="text-sm">Number of UUIDs:</label>
+    <input type="number" id="count" min="1" value="1"
+        class="px-3 py-2 rounded bg-gray-800 border border-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 outline-none w-24">
+    <button onclick="generateUUIDs()" 
+        class="bg-purple-600 hover:bg-purple-500 transition px-4 py-2 rounded font-semibold flex items-center gap-2">
+        <i class="fa-solid fa-plus"></i> Generate
+    </button>
+</div>
+
+<div id="uuidList" class="w-full max-w-2xl space-y-3"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
